@@ -1,23 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-    crossorigin="anonymous"
-  />
-  <!-- JavaScript Bundle with Popper -->
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-</head>
-<body>
-    <h5>Solicitud tarjeta de consumo</h5>
-</body>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid data-bs-toggle">
+        <img src="imagenes/logo.jpg" alt="" class="mx-3" />
+        <a class="navbar-brand" href="cards.html">Centauru's Bank</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto" id="r"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3 bg-dark">
+      <div class="row m-3 p-3">
+        <div class="card">
+          <di class="card-title">
+            <h5 class="text-center pt-2">Solicitud tarjeta de consumo</h5>
+            <div class="card-body">
+              <form class="row g-3 border">
+                <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <h6>Tipo de documento</h6>
+                  <select class="form-select form-select-lg mb-3">
+                    <option selected>Seleccione</option>
+                    <option value="1">Cedula de ciudadania</option>
+                    <option value="2">Cedula de Extrangeria</option>
+                    <option value="3">Pasaporte</option>
+                    <option value="3">Tarjeta de identidad</option>
+                    <option value="3">Registro civil</option>
+                  </select>
+                </div>
+                <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <h6>Numero de documento</h6>
+                  <input class="form-control" type="text" value="" id="" />
+                </div>
+                <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <h6>Nombre completo</h6>
+                  <input class="form-control" type="text" value="" id="" />
+                </div>
+
+
+                <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h6>Correo Electronico</h6>
+                  <input class="form-control" type="email" value="" id="" />
+                </div>
+                <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h6>Estado civil</h6>
+                  <select class="form-select form-select-lg mb-3">
+                    <option selected>Seleccione</option>
+                    <option value="1">Soltero</option>
+                    <option value="2">Casado</option>
+                    <option value="3">Viudo</option>
+                    <option value="3">Divorciado</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6>Sexo</h6>
+                    <select class="form-select form-select-lg mb-3">
+                      <option selected>Seleccione</option>
+                      <option selected>Masculino</option>
+                      <option selected>Femenino</option>
+                    </select>
+                  </div>
+                  <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6>Numero celular</h6>
+                    <input class="form-control" type="number" value="" id="" />
+                  </div>
+                  <div class="col col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  
+                    <h6>Fecha de nacimiento</h6>
+                    <input class="form-control" type="date" value="" id="" />
+
+                  </div>
+               
+
+
+                
+                </div>
+                <div class="row">
+                  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h6>Estrato</h6>
+                    <select class="form-select form-select-lg mb-3">
+                      <option selected>Seleccione</option>
+                      <option selected>1</option>
+                      <option selected>2</option>
+                      <option selected>3</option>
+                      <option selected>4</option>
+                      <option selected>5</option>
+                      <option selected>6</option>
+                      <option selected>7</option>
+                    </select>
+                  </div>
+                  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h6>Salario</h6>
+                  <input type="number" class="form-control">
+
+                  </div>
+                  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h6>Nivel de escolaridad</h6>
+                                 
+                    <select class="form-select form-select-lg mb-3">
+                      <option selected>Seleccione</option>
+                      <option selected>Basica Primaria</option>
+                      <option selected>Basica Secundaria</option>
+                      <option selected>Educacion Media</option>
+             
+                    </select>
+                      
+
+                  
+                  </div>
+                  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <h6>Edad</h6>
+                    <input type="number" class="form-control">
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="card-footer">
+            <button class="btn btn-success">Enviar</button>
+          </div>
+       
+        </div>
+      </div>
+
+    
+    </div>
+  </body>
 </html>
